@@ -1,0 +1,41 @@
+train_img_folder_path : "./DTLD/train/images"
+val_img_folder_path : "./DTLD/val/images"
+test_img_folder_path : "./DTLD/test/images"
+yolo_weights_path : "./weights/DTLD-traffic_lights_yolov8x.pt"
+img_size : 1280
+
+# Attack classes 
+class_to_replace : 1 # red
+target_class : 0 # green
+only_lowest_bbox: False
+
+# Logging
+suffix : ""
+dataset: "dtld"
+classes_path : "classnames/dtld/classes.names"
+patch_name : "trained_patches/yolov8x_dtld_"
+save_freq : 1
+
+# Yolo hyperparameters
+iou_thres : 0.7
+conf_thres : 0.25
+
+# Attack hyperparameters
+num_epochs : 1
+learning_rate : 0.01
+pgd_steps : 100
+
+# Losses
+tv_coef : 1
+cls_coef : 1
+box_coef : 0
+obj_coef : 0 # used in YOLOv7
+dfl_coef: 0 # used in YOLOv8
+green_pen_coef : 0.0002
+
+# Patch config
+patch_size : 125
+patch_width_multiplier : 2.5
+transform : True
+
+random_seed : 1
