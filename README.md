@@ -1,7 +1,8 @@
 # Fool the Stoplight: Realistic Adversarial Patch Attacks on Traffic Light Detectors
 
-This repository contains a PyTorch implementation of patch-based attacks on CNNs for traffic light detection from our IV2024 paper "Fool the Stoplight: Realistic Adversarial Patch Attacks on Traffic Light
-Detectors".
+This repository contains a PyTorch implementation of patch-based attacks on CNNs for traffic light detection from our IEEE IV 2025 paper [Fool the Stoplight: Realistic Adversarial Patch Attacks on Traffic Light Detectors](https://arxiv.org/abs/2506.04823).
+
+Adversarial patches can be generated for YOLOv7 and YOLOv8 models, trained on [BSTLD](https://web.archive.org/web/20250521085419/https://hci.iwr.uni-heidelberg.de/content/bosch-small-traffic-lights-dataset), LISA, [HDTLR](https://ieeexplore.ieee.org/document/8569794/), and [DriveU (DTLD)](https://www.uni-ulm.de/en/in/institute-of-measurement-control-and-microtechnology/research/data-sets/driveu-traffic-light-dataset/) datasets. Trained models can be found in [our repository](https://github.com/KASTEL-MobilityLab/traffic-light-detection). 
 
 ## Installation Guide
 1. Clone this repository.
@@ -69,8 +70,7 @@ If you find this code useful for your research, please cite our paper:
 ```latex
 @InProceedings{pavlitska2025fooling,
   author    = {Pavlitska, Svetlana and Robb, Jamie and Polley, Nikolai and Yazgan, Melih and Zöllner, J. Marius},
-  title={Fool the Stoplight: Realistic Adversarial Patch Attacks on Traffic Light
-Detectors},
+  title={Fool the Stoplight: Realistic Adversarial Patch Attacks on Traffic Light Detectors},
   booktitle = {IEEE Intelligent Vehicles Symposium (IV)},
   year      = {2025}
 }
